@@ -36,6 +36,11 @@ source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
+4. Download training data (optional):
+   - You can download pre-collected ASL alphabet images from [Kaggle ASL Alphabet Dataset](https://www.kaggle.com/datasets/grassknoted/asl-alphabet)
+   - Extract the downloaded images into the `data` directory, organizing them into subfolders A-Z
+   - Or collect your own data using the program's 'c' key to capture frames
+
 ## Usage
 
 Run the program:
@@ -46,6 +51,13 @@ python app.py
 ### Controls
 - Press 'c' to confirm a prediction and save the frame
 - Press 'q' to quit the program
+
+### Data Collection
+You can build your own dataset by:
+1. Running the program
+2. Showing hand signs to the camera
+3. Pressing 'c' when the prediction is correct
+4. Images will be automatically saved to the corresponding letter folder in `data/`
 
 ## Model Architecture
 
